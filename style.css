@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans    -serif;
+    height: 100vh;
+    background-image: url(.//image/giphy.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.raju {
+    background-color: transparent;
+    backdrop-filter: blur(45px);
+    width: 600px;
+    height: 610px;
+    margin: 2rem;
+    border-radius: 30px;
+    padding: 2rem;
+    color: #fff;
+    box-shadow: rgba(19, 21, 19, 0.655)0px 2px 8px;
+
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.city-input::placeholder{
+    color:black;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+
+}
+input[type="text"] {
+    flex: 1;
+    border-radius: 30px;
+    background-color: transparent;
+    padding: 16px;
+    outline: none;
+    border:2.2px solid transparent;
+    box-shadow: rgba(25, 27, 25, 0.655)0px 2px 4px;
+    font-size: 15px;
+    color: #030303;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.btn {
+    padding: 13px;
+    border-radius: 20px;
+    outline: none;
+    border: 2.2px solid transparent;
+    box-shadow: rgba(25, 27, 25, 0.655)0px 2px 4px;
+    color: #fff;
+    margin: 5px;
+    width: 60px;
+    background-color: transparent;
+}
+.btn span{
+    color: white;
+}
+
+.btn:hover {
+    background-color: rgb(59, 189, 59);
+}
+
+.cityElement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.city {
+    font-size: 2rem;
+    opacity: 0.9;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.date {
+    font-size: 1rem;
+    background-color: #029863;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    opacity: 1.5;
+}
+
+.temperature {
+    display: block;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.temp {
+    font-size: 6rem;
+    opacity: 0.8;
+}
+.weather-icon {
+    width: 7rem;
+}
+.addition {
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.wind-info,
+.humidity-info,
+.visibility-info {
+    border: 2px solid #eae4e4b8;
+    padding: 30px;
+    width: 550px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 20px;
+    box-shadow: rgba(163, 205, 163, 0.655)0px 2px 8px;
+    /* box-shadow: rgba(50, 107, 107, 0.783)0px 1px 8px; */
+
+}
+span{
+    color:gold;
+}
+.addition .material-symbols-outlined {
+    font-size: 3rem;
+    opacity: 0.8;
+}
+
+.wind-info div,
+.humidity-info div,
+.visibility-info div {
+    text-align: center;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@media (max-width:600px) {
+    html {
+        font-size: 80%;
+        overflow: hidden;
+
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        width: 100vw;
+        height: 100vh;
+        background-image: url(.//image/giphy.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .raju {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 340px;
+        height:550px;
+        padding:1rem; 
+        margin-bottom: 7rem;    
+    }
+
+   input[type="text"]{
+    flex: 1;
+    font-size: 15.5px;
+    padding: 12px;
+    color: #fff;
+    letter-spacing: 0.2px;
+    }
+
+   .btn{
+    padding: 12px;
+    padding-bottom: 8px;
+    font-size: 12px;
+    width: 50px;
+    height: 45px;
+    margin: 1;
+}
+.city-input::placeholder{
+    color: #fff;
+}
+.cityElement{
+    padding-top: 2rem;
+}
+    .temp {
+        font-size: 4.5rem;
+        opacity: 0.8;
+    }
+    .temperature {
+        gap: 12px;
+    }
+    .weather-icon{
+        width: 10rem;
+    }
+.temp{
+    font-size: 7rem;
+}
+    .addition {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .wind-info,
+    .humidity-info,
+    .visibility-info {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        width: 95px;
+        height: 110px;
+        padding: 20px;
+    }
+    .wind-info div,
+.humidity-info div,
+.visibility-info div {
+    text-align: center;
+   font-size: 12px;
+}
+
+}
